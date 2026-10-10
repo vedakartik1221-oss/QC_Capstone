@@ -1,0 +1,65 @@
+project:
+  name: "Quantum Computing-Based Drug Screening System"
+  version: "1.0.0"
+  description: "Screening drug candidates using classical machine learning and QAOA optimization"
+
+data:
+  bace_url: "https://deepchemdata.s3-us-west-1.amazonaws.com/datasets/bace.csv"
+  raw_file: "data/bace.csv"
+  processed_file: "data/processed_bace.csv"
+  sample_file: "data/sample/sample_bace.csv"
+  smiles_col: "mol"
+  id_col: "CID"
+  target_col: "Class"
+  affinity_col: "pIC50"
+  split_col: "Model"
+  split_strategy: "stratified"  # "stratified" (80/20) or "benchmark" (MoleculeNet Model col)
+  sample_size: 25
+
+features:
+  morgan_radius: 2
+  morgan_n_bits: 512
+  descriptors:
+    - "MW"
+    - "LogP"
+    - "HBD"
+    - "HBA"
+    - "RotB"
+    - "TPSA"
+
+model:
+  type: "RandomForestClassifier"
+  n_estimators: 150
+  max_depth: 14
+  min_samples_split: 4
+  class_weight: "balanced"
+  random_state: 42
+  test_size: 0.2
+  val_size: 0.1
+  model_path: "models/activity_rf_model.joblib"
+  metadata_path: "models/model_metadata.joblib"
+
+scoring:
+  # Candidate composite score weights
+  # Score = w_pred * P(active) + w_affinity * Norm(pIC50) + w_lipinski * LipinskiPassRate
+  w_pred: 0.60
+  w_affinity: 0.25
+  w_lipinski: 0.15
+
+optimization:
+  default_num_candidates: 8
+  max_qubits_recommended: 14
+  default_k: 3
+  penalty_multiplier: 2.0  # Multiplier for penalty A relative to max score
+  qaoa:
+    p: 1
+    max_p: 3
+    shots: 1024
+    optimizer: "COBYLA"
+    max_iter: 40
+    seed: 42
+
+paths:
+  results_dir: "results"
+  models_dir: "models"
+  data_dir: "data"

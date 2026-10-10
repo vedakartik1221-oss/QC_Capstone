@@ -1,0 +1,19 @@
+# Quantum Computing-Based Drug Screening System
+# Pinned and compatible dependencies for Python 3.11
+
+numpy>=2.0.0
+pandas>=2.2.0
+scipy>=1.14.0
+scikit-learn>=1.5.0
+joblib>=1.4.0
+rdkit>=2024.3.0
+qiskit>=2.0.0
+qiskit-aer>=0.16.0
+rustworkx>=0.15.0
+streamlit>=1.35.0
+plotly>=5.22.0
+matplotlib>=3.8.0
+seaborn>=0.13.0
+pyyaml>=6.0.0
+pytest>=8.0.0
+requests>=2.31.0

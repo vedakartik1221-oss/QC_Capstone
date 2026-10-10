@@ -1,0 +1,2964 @@
+{
+  "candidate_pool": [
+    {
+      "CandidateID": "MOL_BACE_1111",
+      "mol": "CC(=O)NC(Cc1cc(F)cc(F)c1)C(O)C[NH2+]C1(c2cccc(C3CCCC3)c2)CCCCC1",
+      "Class": 0,
+      "pIC50": 6.0268722,
+      "predicted_prob_active": 0.1969,
+      "composite_score": 0.4226
+    },
+    {
+      "CandidateID": "MOL_BACE_1061",
+      "mol": "CCc1cscc1CC(NC1=NC(C)(C)Cc2cc(Cl)ccc21)C(=O)[O-]",
+      "Class": 0,
+      "pIC50": 6.2006593,
+      "predicted_prob_active": 0.0718,
+      "composite_score": 0.3582
+    },
+    {
+      "CandidateID": "MOL_BACE_558",
+      "mol": "CC1(c2cc(NC(=O)c3ccc(Cl)cn3)ccc2F)N=C(N)OCC1(F)F",
+      "Class": 1,
+      "pIC50": 7.5850267,
+      "predicted_prob_active": 0.8724,
+      "composite_score": 0.9234
+    },
+    {
+      "CandidateID": "MOL_BACE_1185",
+      "mol": "COc1ccc2c(c1)C1(COC(N)=N1)c1cc(-c3cccc(C)c3)ccc1O2",
+      "Class": 0,
+      "pIC50": 5.7772837,
+      "predicted_prob_active": 0.0772,
+      "composite_score": 0.3355
+    },
+    {
+      "CandidateID": "MOL_BACE_194",
+      "mol": "Nc1ncccc1NCc1ccccc1",
+      "Class": 0,
+      "pIC50": 3.5086384,
+      "predicted_prob_active": 0.1124,
+      "composite_score": 0.2174
+    },
+    {
+      "CandidateID": "MOL_BACE_188",
+      "mol": "C[C@@]1(c2cccc(-c3cccnc3)c2)N=C(c2ccccc2)C(N)=[NH+]1",
+      "Class": 0,
+      "pIC50": 4.0,
+      "predicted_prob_active": 0.1958,
+      "composite_score": 0.2976
+    },
+    {
+      "CandidateID": "MOL_BACE_1121",
+      "mol": "CC1(c2cccc(-c3cncnc3)c2)N=C(N)CCS1",
+      "Class": 0,
+      "pIC50": 6.0,
+      "predicted_prob_active": 0.1151,
+      "composite_score": 0.3719
+    },
+    {
+      "CandidateID": "MOL_BACE_1324",
+      "mol": "COc1ccc2c(c1)C1(COC(N)=N1)c1cc(-c3ccccc3C)ccc1O2",
+      "Class": 0,
+      "pIC50": 5.1536627,
+      "predicted_prob_active": 0.1009,
+      "composite_score": 0.3114
+    }
+  ],
+  "qaoa": {
+    "num_candidates": 8,
+    "k_target": 3,
+    "qaoa_depth_p": 1,
+    "shots": 1024,
+    "optimal_gamma": [
+      1.803
+    ],
+    "optimal_beta": [
+      1.8863
+    ],
+    "feasibility_rate": 0.457,
+    "feasible_shots": 468,
+    "most_frequent_bitstring": "01001001",
+    "best_energy_bitstring": "10100010",
+    "best_feasible_bitstring": "10100010",
+    "chosen_bitstring": "10100010",
+    "used_repair_procedure": false,
+    "selection_evaluation": {
+      "bitstring": "10100010",
+      "selected_indices": [
+        0,
+        2,
+        6
+      ],
+      "selected_ids": [
+        "MOL_BACE_1111",
+        "MOL_BACE_558",
+        "MOL_BACE_1121"
+      ],
+      "num_selected": 3,
+      "k_target": 3,
+      "is_feasible": true,
+      "total_score": 1.7179,
+      "penalty_cost": 0.0,
+      "energy": -1.7179
+    },
+    "selected_ids": [
+      "MOL_BACE_1111",
+      "MOL_BACE_558",
+      "MOL_BACE_1121"
+    ],
+    "selected_indices": [
+      0,
+      2,
+      6
+    ],
+    "final_objective_energy": -1.7179,
+    "final_total_score": 1.7179,
+    "timing_sec": {
+      "classical_optimization_time_sec": 0.536,
+      "simulator_sampling_time_sec": 0.0225
+    },
+    "optimization_history": [
+      {
+        "iteration": 1,
+        "energy": 5.1594,
+        "gamma": [
+          2.2383
+        ],
+        "beta": [
+          1.4008
+        ]
+      },
+      {
+        "iteration": 2,
+        "energy": 5.1594,
+        "gamma": [
+          2.2383
+        ],
+        "beta": [
+          1.4008
+        ]
+      },
+      {
+        "iteration": 3,
+        "energy": 4.1504,
+        "gamma": [
+          2.2761
+        ],
+        "beta": [
+          1.6479
+        ]
+      },
+      {
+        "iteration": 4,
+        "energy": 4.0581,
+        "gamma": [
+          2.067
+        ],
+        "beta": [
+          1.7851
+        ]
+      },
+      {
+        "iteration": 5,
+        "energy": 3.5261,
+        "gamma": [
+          2.023
+        ],
+        "beta": [
+          1.8088
+        ]
+      },
+      {
+        "iteration": 6,
+        "energy": 1.818,
+        "gamma": [
+          1.9405
+        ],
+        "beta": [
+          1.7523
+        ]
+      },
+      {
+        "iteration": 7,
+        "energy": 1.818,
+        "gamma": [
+          1.9405
+        ],
+        "beta": [
+          1.7523
+        ]
+      },
+      {
+        "iteration": 8,
+        "energy": 1.818,
+        "gamma": [
+          1.9405
+        ],
+        "beta": [
+          1.7523
+        ]
+      },
+      {
+        "iteration": 9,
+        "energy": 1.1798,
+        "gamma": [
+          1.8905
+        ],
+        "beta": [
+          1.7535
+        ]
+      },
+      {
+        "iteration": 10,
+        "energy": 0.6809,
+        "gamma": [
+          1.8433
+        ],
+        "beta": [
+          1.7701
+        ]
+      },
+      {
+        "iteration": 11,
+        "energy": 0.2548,
+        "gamma": [
+          1.786
+        ],
+        "beta": [
+          1.852
+        ]
+      },
+      {
+        "iteration": 12,
+        "energy": 0.2548,
+        "gamma": [
+          1.786
+        ],
+        "beta": [
+          1.852
+        ]
+      },
+      {
+        "iteration": 13,
+        "energy": 0.2004,
+        "gamma": [
+          1.8222
+        ],
+        "beta": [
+          1.8865
+        ]
+      },
+      {
+        "iteration": 14,
+        "energy": 0.1604,
+        "gamma": [
+          1.81
+        ],
+        "beta": [
+          1.9084
+        ]
+      },
+      {
+        "iteration": 15,
+        "energy": 0.1402,
+        "gamma": [
+          1.8051
+        ],
+        "beta": [
+          1.9079
+        ]
+      },
+      {
+        "iteration": 16,
+        "energy": 0.1284,
+        "gamma": [
+          1.7973
+        ],
+        "beta": [
+          1.9016
+        ]
+      },
+      {
+        "iteration": 17,
+        "energy": 0.1183,
+        "gamma": [
+          1.801
+        ],
+        "beta": [
+          1.8923
+        ]
+      },
+      {
+        "iteration": 18,
+        "energy": 0.1183,
+        "gamma": [
+          1.801
+        ],
+        "beta": [
+          1.8923
+        ]
+      },
+      {
+        "iteration": 19,
+        "energy": 0.1183,
+        "gamma": [
+          1.801
+        ],
+        "beta": [
+          1.8923
+        ]
+      },
+      {
+        "iteration": 20,
+        "energy": 0.1183,
+        "gamma": [
+          1.801
+        ],
+        "beta": [
+          1.8923
+        ]
+      },
+      {
+        "iteration": 21,
+        "energy": 0.1179,
+        "gamma": [
+          1.8019
+        ],
+        "beta": [
+          1.8919
+        ]
+      },
+      {
+        "iteration": 22,
+        "energy": 0.1175,
+        "gamma": [
+          1.8025
+        ],
+        "beta": [
+          1.8911
+        ]
+      },
+      {
+        "iteration": 23,
+        "energy": 0.1175,
+        "gamma": [
+          1.8025
+        ],
+        "beta": [
+          1.8911
+        ]
+      },
+      {
+        "iteration": 24,
+        "energy": 0.1174,
+        "gamma": [
+          1.8022
+        ],
+        "beta": [
+          1.8907
+        ]
+      },
+      {
+        "iteration": 25,
+        "energy": 0.1173,
+        "gamma": [
+          1.8018
+        ],
+        "beta": [
+          1.8904
+        ]
+      },
+      {
+        "iteration": 26,
+        "energy": 0.1172,
+        "gamma": [
+          1.802
+        ],
+        "beta": [
+          1.89
+        ]
+      },
+      {
+        "iteration": 27,
+        "energy": 0.117,
+        "gamma": [
+          1.8022
+        ],
+        "beta": [
+          1.8895
+        ]
+      },
+      {
+        "iteration": 28,
+        "energy": 0.1168,
+        "gamma": [
+          1.8024
+        ],
+        "beta": [
+          1.8885
+        ]
+      },
+      {
+        "iteration": 29,
+        "energy": 0.1167,
+        "gamma": [
+          1.8021
+        ],
+        "beta": [
+          1.8866
+        ]
+      },
+      {
+        "iteration": 30,
+        "energy": 0.1167,
+        "gamma": [
+          1.8021
+        ],
+        "beta": [
+          1.8866
+        ]
+      },
+      {
+        "iteration": 31,
+        "energy": 0.1167,
+        "gamma": [
+          1.8021
+        ],
+        "beta": [
+          1.8866
+        ]
+      },
+      {
+        "iteration": 32,
+        "energy": 0.1166,
+        "gamma": [
+          1.8026
+        ],
+        "beta": [
+          1.8865
+        ]
+      }
+    ],
+    "distribution": {
+      "10000000": {
+        "count": 2,
+        "probability": 0.002,
+        "energy": 6.9646,
+        "total_score": 0.4226,
+        "is_feasible": false,
+        "num_selected": 1,
+        "selected_ids": [
+          "MOL_BACE_1111"
+        ]
+      },
+      "00010101": {
+        "count": 11,
+        "probability": 0.0107,
+        "energy": -0.9445,
+        "total_score": 0.9445,
+        "is_feasible": true,
+        "num_selected": 3,
+        "selected_ids": [
+          "MOL_BACE_1185",
+          "MOL_BACE_188",
+          "MOL_BACE_1324"
+        ]
+      },
+      "11100010": {
+        "count": 4,
+        "probability": 0.0039,
+        "energy": -0.2293,
+        "total_score": 2.0761,
+        "is_feasible": false,
+        "num_selected": 4,
+        "selected_ids": [
+          "MOL_BACE_1111",
+          "MOL_BACE_1061",
+          "MOL_BACE_558",
+          "MOL_BACE_1121"
+        ]
+      },
+      "00011000": {
+        "count": 4,
+        "probability": 0.0039,
+        "energy": 1.2939,
+        "total_score": 0.5529,
+        "is_feasible": false,
+        "num_selected": 2,
+        "selected_ids": [
+          "MOL_BACE_1185",
+          "MOL_BACE_194"
+        ]
+      },
+      "00110001": {
+        "count": 7,
+        "probability": 0.0068,
+        "energy": -1.5703,
+        "total_score": 1.5703,
+        "is_feasible": true,
+        "num_selected": 3,
+        "selected_ids": [
+          "MOL_BACE_558",
+          "MOL_BACE_1185",
+          "MOL_BACE_1324"
+        ]
+      },
+      "00001000": {
+        "count": 2,
+        "probability": 0.002,
+        "energy": 7.1698,
+        "total_score": 0.2174,
+        "is_feasible": false,
+        "num_selected": 1,
+        "selected_ids": [
+          "MOL_BACE_194"
+        ]
+      },
+      "00011001": {
+        "count": 8,
+        "probability": 0.0078,
+        "energy": -0.8643,
+        "total_score": 0.8643,
+        "is_feasible": true,
+        "num_selected": 3,
+        "selected_ids": [
+          "MOL_BACE_1185",
+          "MOL_BACE_194",
+          "MOL_BACE_1324"
+        ]
+      },
+      "10011000": {
+        "count": 10,
+        "probability": 0.0098,
+        "energy": -0.9755,
+        "total_score": 0.9755,
+        "is_feasible": true,
+        "num_selected": 3,
+        "selected_ids": [
+          "MOL_BACE_1111",
+          "MOL_BACE_1185",
+          "MOL_BACE_194"
+        ]
+      },
+      "11010001": {
+        "count": 10,
+        "probability": 0.0098,
+        "energy": 0.4191,
+        "total_score": 1.4277,
+        "is_feasible": false,
+        "num_selected": 4,
+        "selected_ids": [
+          "MOL_BACE_1111",
+          "MOL_BACE_1061",
+          "MOL_BACE_1185",
+          "MOL_BACE_1324"
+        ]
+      },
+      "00010100": {
+        "count": 6,
+        "probability": 0.0059,
+        "energy": 1.2137,
+        "total_score": 0.6331,
+        "is_feasible": false,
+        "num_selected": 2,
+        "selected_ids": [
+          "MOL_BACE_1185",
+          "MOL_BACE_188"
+        ]
+      },
+      "01010101": {
+        "count": 7,
+        "probability": 0.0068,
+        "energy": 0.5441,
+        "total_score": 1.3027,
+        "is_feasible": false,
+        "num_selected": 4,
+        "selected_ids": [
+          "MOL_BACE_1061",
+          "MOL_BACE_1185",
+          "MOL_BACE_188",
+          "MOL_BACE_1324"
+        ]
+      },
+      "10000111": {
+        "count": 4,
+        "probability": 0.0039,
+        "energy": 0.4433,
+        "total_score": 1.4035,
+        "is_feasible": false,
+        "num_selected": 4,
+        "selected_ids": [
+          "MOL_BACE_1111",
+          "MOL_BACE_188",
+          "MOL_BACE_1121",
+          "MOL_BACE_1324"
+        ]
+      },
+      "00110011": {
+        "count": 4,
+        "probability": 0.0039,
+        "energy": -0.0954,
+        "total_score": 1.9422,
+        "is_feasible": false,
+        "num_selected": 4,
+        "selected_ids": [
+          "MOL_BACE_558",
+          "MOL_BACE_1185",
+          "MOL_BACE_1121",
+          "MOL_BACE_1324"
+        ]
+      },
+      "11001100": {
+        "count": 12,
+        "probability": 0.0117,
+        "energy": 0.551,
+        "total_score": 1.2958,
+        "is_feasible": false,
+        "num_selected": 4,
+        "selected_ids": [
+          "MOL_BACE_1111",
+          "MOL_BACE_1061",
+          "MOL_BACE_194",
+          "MOL_BACE_188"
+        ]
+      },
+      "10110100": {
+        "count": 8,
+        "probability": 0.0078,
+        "energy": -0.1323,
+        "total_score": 1.9791,
+        "is_feasible": false,
+        "num_selected": 4,
+        "selected_ids": [
+          "MOL_BACE_1111",
+          "MOL_BACE_558",
+          "MOL_BACE_1185",
+          "MOL_BACE_188"
+        ]
+      },
+      "00000011": {
+        "count": 4,
+        "probability": 0.0039,
+        "energy": 1.1635,
+        "total_score": 0.6833,
+        "is_feasible": false,
+        "num_selected": 2,
+        "selected_ids": [
+          "MOL_BACE_1121",
+          "MOL_BACE_1324"
+        ]
+      },
+      "10001011": {
+        "count": 6,
+        "probability": 0.0059,
+        "energy": 0.5235,
+        "total_score": 1.3233,
+        "is_feasible": false,
+        "num_selected": 4,
+        "selected_ids": [
+          "MOL_BACE_1111",
+          "MOL_BACE_194",
+          "MOL_BACE_1121",
+          "MOL_BACE_1324"
+        ]
+      },
+      "00101110": {
+        "count": 4,
+        "probability": 0.0039,
+        "energy": 0.0365,
+        "total_score": 1.8103,
+        "is_feasible": false,
+        "num_selected": 4,
+        "selected_ids": [
+          "MOL_BACE_558",
+          "MOL_BACE_194",
+          "MOL_BACE_188",
+          "MOL_BACE_1121"
+        ]
+      },
+      "01010010": {
+        "count": 12,
+        "probability": 0.0117,
+        "energy": -1.0656,
+        "total_score": 1.0656,
+        "is_feasible": true,
+        "num_selected": 3,
+        "selected_ids": [
+          "MOL_BACE_1061",
+          "MOL_BACE_1185",
+          "MOL_BACE_1121"
+        ]
+      },
+      "10111010": {
+        "count": 1,
+        "probability": 0.001,
+        "energy": 5.1164,
+        "total_score": 2.2708,
+        "is_feasible": false,
+        "num_selected": 5,
+        "selected_ids": [
+          "MOL_BACE_1111",
+          "MOL_BACE_558",
+          "MOL_BACE_1185",
+          "MOL_BACE_194",
+          "MOL_BACE_1121"
+        ]
+      },
+      "10001101": {
+        "count": 14,
+        "probability": 0.0137,
+        "energy": 0.5978,
+        "total_score": 1.249,
+        "is_feasible": false,
+        "num_selected": 4,
+        "selected_ids": [
+          "MOL_BACE_1111",
+          "MOL_BACE_194",
+          "MOL_BACE_188",
+          "MOL_BACE_1324"
+        ]
+      },
+      "00011010": {
+        "count": 12,
+        "probability": 0.0117,
+        "energy": -0.9248,
+        "total_score": 0.9248,
+        "is_feasible": true,
+        "num_selected": 3,
+        "selected_ids": [
+          "MOL_BACE_1185",
+          "MOL_BACE_194",
+          "MOL_BACE_1121"
+        ]
+      },
+      "01010110": {
+        "count": 10,
+        "probability": 0.0098,
+        "energy": 0.4836,
+        "total_score": 1.3632,
+        "is_feasible": false,
+        "num_selected": 4,
+        "selected_ids": [
+          "MOL_BACE_1061",
+          "MOL_BACE_1185",
+          "MOL_BACE_188",
+          "MOL_BACE_1121"
+        ]
+      },
+      "10101000": {
+        "count": 4,
+        "probability": 0.0039,
+        "energy": -1.5634,
+        "total_score": 1.5634,
+        "is_feasible": true,
+        "num_selected": 3,
+        "selected_ids": [
+          "MOL_BACE_1111",
+          "MOL_BACE_558",
+          "MOL_BACE_194"
+        ]
+      },
+      "10011010": {
+        "count": 11,
+        "probability": 0.0107,
+        "energy": 0.4994,
+        "total_score": 1.3474,
+        "is_feasible": false,
+        "num_selected": 4,
+        "selected_ids": [
+          "MOL_BACE_1111",
+          "MOL_BACE_1185",
+          "MOL_BACE_194",
+          "MOL_BACE_1121"
+        ]
+      },
+      "00001111": {
+        "count": 7,
+        "probability": 0.0068,
+        "energy": 0.6485,
+        "total_score": 1.1983,
+        "is_feasible": false,
+        "num_selected": 4,
+        "selected_ids": [
+          "MOL_BACE_194",
+          "MOL_BACE_188",
+          "MOL_BACE_1121",
+          "MOL_BACE_1324"
+        ]
+      },
+      "01001000": {
+        "count": 8,
+        "probability": 0.0078,
+        "energy": 1.2712,
+        "total_score": 0.5756,
+        "is_feasible": false,
+        "num_selected": 2,
+        "selected_ids": [
+          "MOL_BACE_1061",
+          "MOL_BACE_194"
+        ]
+      },
+      "10000100": {
+        "count": 3,
+        "probability": 0.0029,
+        "energy": 1.1266,
+        "total_score": 0.7202,
+        "is_feasible": false,
+        "num_selected": 2,
+        "selected_ids": [
+          "MOL_BACE_1111",
+          "MOL_BACE_188"
+        ]
+      },
+      "01001110": {
+        "count": 15,
+        "probability": 0.0146,
+        "energy": 0.6017,
+        "total_score": 1.2451,
+        "is_feasible": false,
+        "num_selected": 4,
+        "selected_ids": [
+          "MOL_BACE_1061",
+          "MOL_BACE_194",
+          "MOL_BACE_188",
+          "MOL_BACE_1121"
+        ]
+      },
+      "01011001": {
+        "count": 7,
+        "probability": 0.0068,
+        "energy": 0.6243,
+        "total_score": 1.2225,
+        "is_feasible": false,
+        "num_selected": 4,
+        "selected_ids": [
+          "MOL_BACE_1061",
+          "MOL_BACE_1185",
+          "MOL_BACE_194",
+          "MOL_BACE_1324"
+        ]
+      },
+      "11000010": {
+        "count": 8,
+        "probability": 0.0078,
+        "energy": -1.1527,
+        "total_score": 1.1527,
+        "is_feasible": true,
+        "num_selected": 3,
+        "selected_ids": [
+          "MOL_BACE_1111",
+          "MOL_BACE_1061",
+          "MOL_BACE_1121"
+        ]
+      },
+      "01110000": {
+        "count": 4,
+        "probability": 0.0039,
+        "energy": -1.6171,
+        "total_score": 1.6171,
+        "is_feasible": true,
+        "num_selected": 3,
+        "selected_ids": [
+          "MOL_BACE_1061",
+          "MOL_BACE_558",
+          "MOL_BACE_1185"
+        ]
+      },
+      "01000011": {
+        "count": 6,
+        "probability": 0.0059,
+        "energy": -1.0415,
+        "total_score": 1.0415,
+        "is_feasible": true,
+        "num_selected": 3,
+        "selected_ids": [
+          "MOL_BACE_1061",
+          "MOL_BACE_1121",
+          "MOL_BACE_1324"
+        ]
+      },
+      "11001011": {
+        "count": 4,
+        "probability": 0.0039,
+        "energy": 5.7057,
+        "total_score": 1.6815,
+        "is_feasible": false,
+        "num_selected": 5,
+        "selected_ids": [
+          "MOL_BACE_1111",
+          "MOL_BACE_1061",
+          "MOL_BACE_194",
+          "MOL_BACE_1121",
+          "MOL_BACE_1324"
+        ]
+      },
+      "00001100": {
+        "count": 8,
+        "probability": 0.0078,
+        "energy": 1.3318,
+        "total_score": 0.515,
+        "is_feasible": false,
+        "num_selected": 2,
+        "selected_ids": [
+          "MOL_BACE_194",
+          "MOL_BACE_188"
+        ]
+      },
+      "10110010": {
+        "count": 5,
+        "probability": 0.0049,
+        "energy": -0.2066,
+        "total_score": 2.0534,
+        "is_feasible": false,
+        "num_selected": 4,
+        "selected_ids": [
+          "MOL_BACE_1111",
+          "MOL_BACE_558",
+          "MOL_BACE_1185",
+          "MOL_BACE_1121"
+        ]
+      },
+      "10001110": {
+        "count": 5,
+        "probability": 0.0049,
+        "energy": 0.5373,
+        "total_score": 1.3095,
+        "is_feasible": false,
+        "num_selected": 4,
+        "selected_ids": [
+          "MOL_BACE_1111",
+          "MOL_BACE_194",
+          "MOL_BACE_188",
+          "MOL_BACE_1121"
+        ]
+      },
+      "11001000": {
+        "count": 10,
+        "probability": 0.0098,
+        "energy": -0.9982,
+        "total_score": 0.9982,
+        "is_feasible": true,
+        "num_selected": 3,
+        "selected_ids": [
+          "MOL_BACE_1111",
+          "MOL_BACE_1061",
+          "MOL_BACE_194"
+        ]
+      },
+      "00001101": {
+        "count": 16,
+        "probability": 0.0156,
+        "energy": -0.8264,
+        "total_score": 0.8264,
+        "is_feasible": true,
+        "num_selected": 3,
+        "selected_ids": [
+          "MOL_BACE_194",
+          "MOL_BACE_188",
+          "MOL_BACE_1324"
+        ]
+      },
+      "00011110": {
+        "count": 17,
+        "probability": 0.0166,
+        "energy": 0.6244,
+        "total_score": 1.2224,
+        "is_feasible": false,
+        "num_selected": 4,
+        "selected_ids": [
+          "MOL_BACE_1185",
+          "MOL_BACE_194",
+          "MOL_BACE_188",
+          "MOL_BACE_1121"
+        ]
+      },
+      "10001010": {
+        "count": 10,
+        "probability": 0.0098,
+        "energy": -1.0119,
+        "total_score": 1.0119,
+        "is_feasible": true,
+        "num_selected": 3,
+        "selected_ids": [
+          "MOL_BACE_1111",
+          "MOL_BACE_194",
+          "MOL_BACE_1121"
+        ]
+      },
+      "01001101": {
+        "count": 8,
+        "probability": 0.0078,
+        "energy": 0.6622,
+        "total_score": 1.1846,
+        "is_feasible": false,
+        "num_selected": 4,
+        "selected_ids": [
+          "MOL_BACE_1061",
+          "MOL_BACE_194",
+          "MOL_BACE_188",
+          "MOL_BACE_1324"
+        ]
+      },
+      "01001011": {
+        "count": 9,
+        "probability": 0.0088,
+        "energy": 0.5879,
+        "total_score": 1.2589,
+        "is_feasible": false,
+        "num_selected": 4,
+        "selected_ids": [
+          "MOL_BACE_1061",
+          "MOL_BACE_194",
+          "MOL_BACE_1121",
+          "MOL_BACE_1324"
+        ]
+      },
+      "11000011": {
+        "count": 5,
+        "probability": 0.0049,
+        "energy": 0.3827,
+        "total_score": 1.4641,
+        "is_feasible": false,
+        "num_selected": 4,
+        "selected_ids": [
+          "MOL_BACE_1111",
+          "MOL_BACE_1061",
+          "MOL_BACE_1121",
+          "MOL_BACE_1324"
+        ]
+      },
+      "00100100": {
+        "count": 3,
+        "probability": 0.0029,
+        "energy": 0.6258,
+        "total_score": 1.221,
+        "is_feasible": false,
+        "num_selected": 2,
+        "selected_ids": [
+          "MOL_BACE_558",
+          "MOL_BACE_188"
+        ]
+      },
+      "00111100": {
+        "count": 4,
+        "probability": 0.0039,
+        "energy": 0.0729,
+        "total_score": 1.7739,
+        "is_feasible": false,
+        "num_selected": 4,
+        "selected_ids": [
+          "MOL_BACE_558",
+          "MOL_BACE_1185",
+          "MOL_BACE_194",
+          "MOL_BACE_188"
+        ]
+      },
+      "01000101": {
+        "count": 9,
+        "probability": 0.0088,
+        "energy": -0.9672,
+        "total_score": 0.9672,
+        "is_feasible": true,
+        "num_selected": 3,
+        "selected_ids": [
+          "MOL_BACE_1061",
+          "MOL_BACE_188",
+          "MOL_BACE_1324"
+        ]
+      },
+      "01001010": {
+        "count": 11,
+        "probability": 0.0107,
+        "energy": -0.9475,
+        "total_score": 0.9475,
+        "is_feasible": true,
+        "num_selected": 3,
+        "selected_ids": [
+          "MOL_BACE_1061",
+          "MOL_BACE_194",
+          "MOL_BACE_1121"
+        ]
+      },
+      "11000101": {
+        "count": 6,
+        "probability": 0.0059,
+        "energy": 0.457,
+        "total_score": 1.3898,
+        "is_feasible": false,
+        "num_selected": 4,
+        "selected_ids": [
+          "MOL_BACE_1111",
+          "MOL_BACE_1061",
+          "MOL_BACE_188",
+          "MOL_BACE_1324"
+        ]
+      },
+      "00100011": {
+        "count": 7,
+        "probability": 0.0068,
+        "energy": -1.6067,
+        "total_score": 1.6067,
+        "is_feasible": true,
+        "num_selected": 3,
+        "selected_ids": [
+          "MOL_BACE_558",
+          "MOL_BACE_1121",
+          "MOL_BACE_1324"
+        ]
+      },
+      "10000101": {
+        "count": 7,
+        "probability": 0.0068,
+        "energy": -1.0316,
+        "total_score": 1.0316,
+        "is_feasible": true,
+        "num_selected": 3,
+        "selected_ids": [
+          "MOL_BACE_1111",
+          "MOL_BACE_188",
+          "MOL_BACE_1324"
+        ]
+      },
+      "00010000": {
+        "count": 1,
+        "probability": 0.001,
+        "energy": 7.0517,
+        "total_score": 0.3355,
+        "is_feasible": false,
+        "num_selected": 1,
+        "selected_ids": [
+          "MOL_BACE_1185"
+        ]
+      },
+      "00101111": {
+        "count": 1,
+        "probability": 0.001,
+        "energy": 5.2655,
+        "total_score": 2.1217,
+        "is_feasible": false,
+        "num_selected": 5,
+        "selected_ids": [
+          "MOL_BACE_558",
+          "MOL_BACE_194",
+          "MOL_BACE_188",
+          "MOL_BACE_1121",
+          "MOL_BACE_1324"
+        ]
+      },
+      "10001000": {
+        "count": 4,
+        "probability": 0.0039,
+        "energy": 1.2068,
+        "total_score": 0.64,
+        "is_feasible": false,
+        "num_selected": 2,
+        "selected_ids": [
+          "MOL_BACE_1111",
+          "MOL_BACE_194"
+        ]
+      },
+      "10101100": {
+        "count": 2,
+        "probability": 0.002,
+        "energy": -0.0142,
+        "total_score": 1.861,
+        "is_feasible": false,
+        "num_selected": 4,
+        "selected_ids": [
+          "MOL_BACE_1111",
+          "MOL_BACE_558",
+          "MOL_BACE_194",
+          "MOL_BACE_188"
+        ]
+      },
+      "11010100": {
+        "count": 7,
+        "probability": 0.0068,
+        "energy": 0.4329,
+        "total_score": 1.4139,
+        "is_feasible": false,
+        "num_selected": 4,
+        "selected_ids": [
+          "MOL_BACE_1111",
+          "MOL_BACE_1061",
+          "MOL_BACE_1185",
+          "MOL_BACE_188"
+        ]
+      },
+      "10000110": {
+        "count": 12,
+        "probability": 0.0117,
+        "energy": -1.0921,
+        "total_score": 1.0921,
+        "is_feasible": true,
+        "num_selected": 3,
+        "selected_ids": [
+          "MOL_BACE_1111",
+          "MOL_BACE_188",
+          "MOL_BACE_1121"
+        ]
+      },
+      "10111000": {
+        "count": 5,
+        "probability": 0.0049,
+        "energy": -0.0521,
+        "total_score": 1.8989,
+        "is_feasible": false,
+        "num_selected": 4,
+        "selected_ids": [
+          "MOL_BACE_1111",
+          "MOL_BACE_558",
+          "MOL_BACE_1185",
+          "MOL_BACE_194"
+        ]
+      },
+      "01111000": {
+        "count": 8,
+        "probability": 0.0078,
+        "energy": 0.0123,
+        "total_score": 1.8345,
+        "is_feasible": false,
+        "num_selected": 4,
+        "selected_ids": [
+          "MOL_BACE_1061",
+          "MOL_BACE_558",
+          "MOL_BACE_1185",
+          "MOL_BACE_194"
+        ]
+      },
+      "10010010": {
+        "count": 9,
+        "probability": 0.0088,
+        "energy": -1.13,
+        "total_score": 1.13,
+        "is_feasible": true,
+        "num_selected": 3,
+        "selected_ids": [
+          "MOL_BACE_1111",
+          "MOL_BACE_1185",
+          "MOL_BACE_1121"
+        ]
+      },
+      "01100101": {
+        "count": 3,
+        "probability": 0.0029,
+        "energy": -0.0438,
+        "total_score": 1.8906,
+        "is_feasible": false,
+        "num_selected": 4,
+        "selected_ids": [
+          "MOL_BACE_1061",
+          "MOL_BACE_558",
+          "MOL_BACE_188",
+          "MOL_BACE_1324"
+        ]
+      },
+      "00011100": {
+        "count": 11,
+        "probability": 0.0107,
+        "energy": -0.8505,
+        "total_score": 0.8505,
+        "is_feasible": true,
+        "num_selected": 3,
+        "selected_ids": [
+          "MOL_BACE_1185",
+          "MOL_BACE_194",
+          "MOL_BACE_188"
+        ]
+      },
+      "00000101": {
+        "count": 3,
+        "probability": 0.0029,
+        "energy": 1.2378,
+        "total_score": 0.609,
+        "is_feasible": false,
+        "num_selected": 2,
+        "selected_ids": [
+          "MOL_BACE_188",
+          "MOL_BACE_1324"
+        ]
+      },
+      "10010000": {
+        "count": 2,
+        "probability": 0.002,
+        "energy": 1.0887,
+        "total_score": 0.7581,
+        "is_feasible": false,
+        "num_selected": 2,
+        "selected_ids": [
+          "MOL_BACE_1111",
+          "MOL_BACE_1185"
+        ]
+      },
+      "01100100": {
+        "count": 6,
+        "probability": 0.0059,
+        "energy": -1.5792,
+        "total_score": 1.5792,
+        "is_feasible": true,
+        "num_selected": 3,
+        "selected_ids": [
+          "MOL_BACE_1061",
+          "MOL_BACE_558",
+          "MOL_BACE_188"
+        ]
+      },
+      "01011100": {
+        "count": 4,
+        "probability": 0.0039,
+        "energy": 0.6381,
+        "total_score": 1.2087,
+        "is_feasible": false,
+        "num_selected": 4,
+        "selected_ids": [
+          "MOL_BACE_1061",
+          "MOL_BACE_1185",
+          "MOL_BACE_194",
+          "MOL_BACE_188"
+        ]
+      },
+      "01100001": {
+        "count": 8,
+        "probability": 0.0078,
+        "energy": -1.593,
+        "total_score": 1.593,
+        "is_feasible": true,
+        "num_selected": 3,
+        "selected_ids": [
+          "MOL_BACE_1061",
+          "MOL_BACE_558",
+          "MOL_BACE_1324"
+        ]
+      },
+      "00010110": {
+        "count": 10,
+        "probability": 0.0098,
+        "energy": -1.005,
+        "total_score": 1.005,
+        "is_feasible": true,
+        "num_selected": 3,
+        "selected_ids": [
+          "MOL_BACE_1185",
+          "MOL_BACE_188",
+          "MOL_BACE_1121"
+        ]
+      },
+      "10001100": {
+        "count": 12,
+        "probability": 0.0117,
+        "energy": -0.9376,
+        "total_score": 0.9376,
+        "is_feasible": true,
+        "num_selected": 3,
+        "selected_ids": [
+          "MOL_BACE_1111",
+          "MOL_BACE_194",
+          "MOL_BACE_188"
+        ]
+      },
+      "10001001": {
+        "count": 12,
+        "probability": 0.0117,
+        "energy": -0.9514,
+        "total_score": 0.9514,
+        "is_feasible": true,
+        "num_selected": 3,
+        "selected_ids": [
+          "MOL_BACE_1111",
+          "MOL_BACE_194",
+          "MOL_BACE_1324"
+        ]
+      },
+      "11011000": {
+        "count": 9,
+        "probability": 0.0088,
+        "energy": 0.5131,
+        "total_score": 1.3337,
+        "is_feasible": false,
+        "num_selected": 4,
+        "selected_ids": [
+          "MOL_BACE_1111",
+          "MOL_BACE_1061",
+          "MOL_BACE_1185",
+          "MOL_BACE_194"
+        ]
+      },
+      "11000110": {
+        "count": 7,
+        "probability": 0.0068,
+        "energy": 0.3965,
+        "total_score": 1.4503,
+        "is_feasible": false,
+        "num_selected": 4,
+        "selected_ids": [
+          "MOL_BACE_1111",
+          "MOL_BACE_1061",
+          "MOL_BACE_188",
+          "MOL_BACE_1121"
+        ]
+      },
+      "00101100": {
+        "count": 3,
+        "probability": 0.0029,
+        "energy": -1.4384,
+        "total_score": 1.4384,
+        "is_feasible": true,
+        "num_selected": 3,
+        "selected_ids": [
+          "MOL_BACE_558",
+          "MOL_BACE_194",
+          "MOL_BACE_188"
+        ]
+      },
+      "00110100": {
+        "count": 8,
+        "probability": 0.0078,
+        "energy": -1.5565,
+        "total_score": 1.5565,
+        "is_feasible": true,
+        "num_selected": 3,
+        "selected_ids": [
+          "MOL_BACE_558",
+          "MOL_BACE_1185",
+          "MOL_BACE_188"
+        ]
+      },
+      "10010100": {
+        "count": 10,
+        "probability": 0.0098,
+        "energy": -1.0557,
+        "total_score": 1.0557,
+        "is_feasible": true,
+        "num_selected": 3,
+        "selected_ids": [
+          "MOL_BACE_1111",
+          "MOL_BACE_1185",
+          "MOL_BACE_188"
+        ]
+      },
+      "00010011": {
+        "count": 4,
+        "probability": 0.0039,
+        "energy": -1.0188,
+        "total_score": 1.0188,
+        "is_feasible": true,
+        "num_selected": 3,
+        "selected_ids": [
+          "MOL_BACE_1185",
+          "MOL_BACE_1121",
+          "MOL_BACE_1324"
+        ]
+      },
+      "11100000": {
+        "count": 3,
+        "probability": 0.0029,
+        "energy": -1.7042,
+        "total_score": 1.7042,
+        "is_feasible": true,
+        "num_selected": 3,
+        "selected_ids": [
+          "MOL_BACE_1111",
+          "MOL_BACE_1061",
+          "MOL_BACE_558"
+        ]
+      },
+      "00011011": {
+        "count": 10,
+        "probability": 0.0098,
+        "energy": 0.6106,
+        "total_score": 1.2362,
+        "is_feasible": false,
+        "num_selected": 4,
+        "selected_ids": [
+          "MOL_BACE_1185",
+          "MOL_BACE_194",
+          "MOL_BACE_1121",
+          "MOL_BACE_1324"
+        ]
+      },
+      "00100110": {
+        "count": 7,
+        "probability": 0.0068,
+        "energy": -1.5929,
+        "total_score": 1.5929,
+        "is_feasible": true,
+        "num_selected": 3,
+        "selected_ids": [
+          "MOL_BACE_558",
+          "MOL_BACE_188",
+          "MOL_BACE_1121"
+        ]
+      },
+      "01011000": {
+        "count": 18,
+        "probability": 0.0176,
+        "energy": -0.9111,
+        "total_score": 0.9111,
+        "is_feasible": true,
+        "num_selected": 3,
+        "selected_ids": [
+          "MOL_BACE_1061",
+          "MOL_BACE_1185",
+          "MOL_BACE_194"
+        ]
+      },
+      "01001001": {
+        "count": 19,
+        "probability": 0.0186,
+        "energy": -0.887,
+        "total_score": 0.887,
+        "is_feasible": true,
+        "num_selected": 3,
+        "selected_ids": [
+          "MOL_BACE_1061",
+          "MOL_BACE_194",
+          "MOL_BACE_1324"
+        ]
+      },
+      "01110001": {
+        "count": 4,
+        "probability": 0.0039,
+        "energy": -0.0817,
+        "total_score": 1.9285,
+        "is_feasible": false,
+        "num_selected": 4,
+        "selected_ids": [
+          "MOL_BACE_1061",
+          "MOL_BACE_558",
+          "MOL_BACE_1185",
+          "MOL_BACE_1324"
+        ]
+      },
+      "10011001": {
+        "count": 8,
+        "probability": 0.0078,
+        "energy": 0.5599,
+        "total_score": 1.2869,
+        "is_feasible": false,
+        "num_selected": 4,
+        "selected_ids": [
+          "MOL_BACE_1111",
+          "MOL_BACE_1185",
+          "MOL_BACE_194",
+          "MOL_BACE_1324"
+        ]
+      },
+      "00110010": {
+        "count": 3,
+        "probability": 0.0029,
+        "energy": -1.6308,
+        "total_score": 1.6308,
+        "is_feasible": true,
+        "num_selected": 3,
+        "selected_ids": [
+          "MOL_BACE_558",
+          "MOL_BACE_1185",
+          "MOL_BACE_1121"
+        ]
+      },
+      "11011100": {
+        "count": 1,
+        "probability": 0.001,
+        "energy": 5.7559,
+        "total_score": 1.6313,
+        "is_feasible": false,
+        "num_selected": 5,
+        "selected_ids": [
+          "MOL_BACE_1111",
+          "MOL_BACE_1061",
+          "MOL_BACE_1185",
+          "MOL_BACE_194",
+          "MOL_BACE_188"
+        ]
+      },
+      "10100100": {
+        "count": 10,
+        "probability": 0.0098,
+        "energy": -1.6436,
+        "total_score": 1.6436,
+        "is_feasible": true,
+        "num_selected": 3,
+        "selected_ids": [
+          "MOL_BACE_1111",
+          "MOL_BACE_558",
+          "MOL_BACE_188"
+        ]
+      },
+      "00101001": {
+        "count": 9,
+        "probability": 0.0088,
+        "energy": -1.4522,
+        "total_score": 1.4522,
+        "is_feasible": true,
+        "num_selected": 3,
+        "selected_ids": [
+          "MOL_BACE_558",
+          "MOL_BACE_194",
+          "MOL_BACE_1324"
+        ]
+      },
+      "01110100": {
+        "count": 2,
+        "probability": 0.002,
+        "energy": -0.0679,
+        "total_score": 1.9147,
+        "is_feasible": false,
+        "num_selected": 4,
+        "selected_ids": [
+          "MOL_BACE_1061",
+          "MOL_BACE_558",
+          "MOL_BACE_1185",
+          "MOL_BACE_188"
+        ]
+      },
+      "01001100": {
+        "count": 8,
+        "probability": 0.0078,
+        "energy": -0.8732,
+        "total_score": 0.8732,
+        "is_feasible": true,
+        "num_selected": 3,
+        "selected_ids": [
+          "MOL_BACE_1061",
+          "MOL_BACE_194",
+          "MOL_BACE_188"
+        ]
+      },
+      "00000111": {
+        "count": 7,
+        "probability": 0.0068,
+        "energy": -0.9809,
+        "total_score": 0.9809,
+        "is_feasible": true,
+        "num_selected": 3,
+        "selected_ids": [
+          "MOL_BACE_188",
+          "MOL_BACE_1121",
+          "MOL_BACE_1324"
+        ]
+      },
+      "11000001": {
+        "count": 8,
+        "probability": 0.0078,
+        "energy": -1.0922,
+        "total_score": 1.0922,
+        "is_feasible": true,
+        "num_selected": 3,
+        "selected_ids": [
+          "MOL_BACE_1111",
+          "MOL_BACE_1061",
+          "MOL_BACE_1324"
+        ]
+      },
+      "10011100": {
+        "count": 10,
+        "probability": 0.0098,
+        "energy": 0.5737,
+        "total_score": 1.2731,
+        "is_feasible": false,
+        "num_selected": 4,
+        "selected_ids": [
+          "MOL_BACE_1111",
+          "MOL_BACE_1185",
+          "MOL_BACE_194",
+          "MOL_BACE_188"
+        ]
+      },
+      "01011101": {
+        "count": 1,
+        "probability": 0.001,
+        "energy": 5.8671,
+        "total_score": 1.5201,
+        "is_feasible": false,
+        "num_selected": 5,
+        "selected_ids": [
+          "MOL_BACE_1061",
+          "MOL_BACE_1185",
+          "MOL_BACE_194",
+          "MOL_BACE_188",
+          "MOL_BACE_1324"
+        ]
+      },
+      "00101010": {
+        "count": 8,
+        "probability": 0.0078,
+        "energy": -1.5127,
+        "total_score": 1.5127,
+        "is_feasible": true,
+        "num_selected": 3,
+        "selected_ids": [
+          "MOL_BACE_558",
+          "MOL_BACE_194",
+          "MOL_BACE_1121"
+        ]
+      },
+      "01000110": {
+        "count": 15,
+        "probability": 0.0146,
+        "energy": -1.0277,
+        "total_score": 1.0277,
+        "is_feasible": true,
+        "num_selected": 3,
+        "selected_ids": [
+          "MOL_BACE_1061",
+          "MOL_BACE_188",
+          "MOL_BACE_1121"
+        ]
+      },
+      "00101011": {
+        "count": 4,
+        "probability": 0.0039,
+        "energy": 0.0227,
+        "total_score": 1.8241,
+        "is_feasible": false,
+        "num_selected": 4,
+        "selected_ids": [
+          "MOL_BACE_558",
+          "MOL_BACE_194",
+          "MOL_BACE_1121",
+          "MOL_BACE_1324"
+        ]
+      },
+      "01111100": {
+        "count": 2,
+        "probability": 0.002,
+        "energy": 5.2551,
+        "total_score": 2.1321,
+        "is_feasible": false,
+        "num_selected": 5,
+        "selected_ids": [
+          "MOL_BACE_1061",
+          "MOL_BACE_558",
+          "MOL_BACE_1185",
+          "MOL_BACE_194",
+          "MOL_BACE_188"
+        ]
+      },
+      "01000100": {
+        "count": 5,
+        "probability": 0.0049,
+        "energy": 1.191,
+        "total_score": 0.6558,
+        "is_feasible": false,
+        "num_selected": 2,
+        "selected_ids": [
+          "MOL_BACE_1061",
+          "MOL_BACE_188"
+        ]
+      },
+      "00011101": {
+        "count": 17,
+        "probability": 0.0166,
+        "energy": 0.6849,
+        "total_score": 1.1619,
+        "is_feasible": false,
+        "num_selected": 4,
+        "selected_ids": [
+          "MOL_BACE_1185",
+          "MOL_BACE_194",
+          "MOL_BACE_188",
+          "MOL_BACE_1324"
+        ]
+      },
+      "11010010": {
+        "count": 3,
+        "probability": 0.0029,
+        "energy": 0.3586,
+        "total_score": 1.4882,
+        "is_feasible": false,
+        "num_selected": 4,
+        "selected_ids": [
+          "MOL_BACE_1111",
+          "MOL_BACE_1061",
+          "MOL_BACE_1185",
+          "MOL_BACE_1121"
+        ]
+      },
+      "10000001": {
+        "count": 3,
+        "probability": 0.0029,
+        "energy": 1.1128,
+        "total_score": 0.734,
+        "is_feasible": false,
+        "num_selected": 2,
+        "selected_ids": [
+          "MOL_BACE_1111",
+          "MOL_BACE_1324"
+        ]
+      },
+      "01101100": {
+        "count": 1,
+        "probability": 0.001,
+        "energy": 0.0502,
+        "total_score": 1.7966,
+        "is_feasible": false,
+        "num_selected": 4,
+        "selected_ids": [
+          "MOL_BACE_1061",
+          "MOL_BACE_558",
+          "MOL_BACE_194",
+          "MOL_BACE_188"
+        ]
+      },
+      "01010100": {
+        "count": 12,
+        "probability": 0.0117,
+        "energy": -0.9913,
+        "total_score": 0.9913,
+        "is_feasible": true,
+        "num_selected": 3,
+        "selected_ids": [
+          "MOL_BACE_1061",
+          "MOL_BACE_1185",
+          "MOL_BACE_188"
+        ]
+      },
+      "00010111": {
+        "count": 5,
+        "probability": 0.0049,
+        "energy": 0.5304,
+        "total_score": 1.3164,
+        "is_feasible": false,
+        "num_selected": 4,
+        "selected_ids": [
+          "MOL_BACE_1185",
+          "MOL_BACE_188",
+          "MOL_BACE_1121",
+          "MOL_BACE_1324"
+        ]
+      },
+      "11000100": {
+        "count": 3,
+        "probability": 0.0029,
+        "energy": -1.0784,
+        "total_score": 1.0784,
+        "is_feasible": true,
+        "num_selected": 3,
+        "selected_ids": [
+          "MOL_BACE_1111",
+          "MOL_BACE_1061",
+          "MOL_BACE_188"
+        ]
+      },
+      "10110110": {
+        "count": 1,
+        "probability": 0.001,
+        "energy": 5.0362,
+        "total_score": 2.351,
+        "is_feasible": false,
+        "num_selected": 5,
+        "selected_ids": [
+          "MOL_BACE_1111",
+          "MOL_BACE_558",
+          "MOL_BACE_1185",
+          "MOL_BACE_188",
+          "MOL_BACE_1121"
+        ]
+      },
+      "10000011": {
+        "count": 6,
+        "probability": 0.0059,
+        "energy": -1.1059,
+        "total_score": 1.1059,
+        "is_feasible": true,
+        "num_selected": 3,
+        "selected_ids": [
+          "MOL_BACE_1111",
+          "MOL_BACE_1121",
+          "MOL_BACE_1324"
+        ]
+      },
+      "00001001": {
+        "count": 5,
+        "probability": 0.0049,
+        "energy": 1.318,
+        "total_score": 0.5288,
+        "is_feasible": false,
+        "num_selected": 2,
+        "selected_ids": [
+          "MOL_BACE_194",
+          "MOL_BACE_1324"
+        ]
+      },
+      "00100111": {
+        "count": 4,
+        "probability": 0.0039,
+        "energy": -0.0575,
+        "total_score": 1.9043,
+        "is_feasible": false,
+        "num_selected": 4,
+        "selected_ids": [
+          "MOL_BACE_558",
+          "MOL_BACE_188",
+          "MOL_BACE_1121",
+          "MOL_BACE_1324"
+        ]
+      },
+      "10010001": {
+        "count": 10,
+        "probability": 0.0098,
+        "energy": -1.0695,
+        "total_score": 1.0695,
+        "is_feasible": true,
+        "num_selected": 3,
+        "selected_ids": [
+          "MOL_BACE_1111",
+          "MOL_BACE_1185",
+          "MOL_BACE_1324"
+        ]
+      },
+      "00101101": {
+        "count": 5,
+        "probability": 0.0049,
+        "energy": 0.097,
+        "total_score": 1.7498,
+        "is_feasible": false,
+        "num_selected": 4,
+        "selected_ids": [
+          "MOL_BACE_558",
+          "MOL_BACE_194",
+          "MOL_BACE_188",
+          "MOL_BACE_1324"
+        ]
+      },
+      "01011010": {
+        "count": 9,
+        "probability": 0.0088,
+        "energy": 0.5638,
+        "total_score": 1.283,
+        "is_feasible": false,
+        "num_selected": 4,
+        "selected_ids": [
+          "MOL_BACE_1061",
+          "MOL_BACE_1185",
+          "MOL_BACE_194",
+          "MOL_BACE_1121"
+        ]
+      },
+      "11001001": {
+        "count": 10,
+        "probability": 0.0098,
+        "energy": 0.5372,
+        "total_score": 1.3096,
+        "is_feasible": false,
+        "num_selected": 4,
+        "selected_ids": [
+          "MOL_BACE_1111",
+          "MOL_BACE_1061",
+          "MOL_BACE_194",
+          "MOL_BACE_1324"
+        ]
+      },
+      "10010110": {
+        "count": 7,
+        "probability": 0.0068,
+        "energy": 0.4192,
+        "total_score": 1.4276,
+        "is_feasible": false,
+        "num_selected": 4,
+        "selected_ids": [
+          "MOL_BACE_1111",
+          "MOL_BACE_1185",
+          "MOL_BACE_188",
+          "MOL_BACE_1121"
+        ]
+      },
+      "11100001": {
+        "count": 4,
+        "probability": 0.0039,
+        "energy": -0.1688,
+        "total_score": 2.0156,
+        "is_feasible": false,
+        "num_selected": 4,
+        "selected_ids": [
+          "MOL_BACE_1111",
+          "MOL_BACE_1061",
+          "MOL_BACE_558",
+          "MOL_BACE_1324"
+        ]
+      },
+      "00111011": {
+        "count": 2,
+        "probability": 0.002,
+        "energy": 5.2276,
+        "total_score": 2.1596,
+        "is_feasible": false,
+        "num_selected": 5,
+        "selected_ids": [
+          "MOL_BACE_558",
+          "MOL_BACE_1185",
+          "MOL_BACE_194",
+          "MOL_BACE_1121",
+          "MOL_BACE_1324"
+        ]
+      },
+      "10100000": {
+        "count": 1,
+        "probability": 0.001,
+        "energy": 0.5008,
+        "total_score": 1.346,
+        "is_feasible": false,
+        "num_selected": 2,
+        "selected_ids": [
+          "MOL_BACE_1111",
+          "MOL_BACE_558"
+        ]
+      },
+      "10010011": {
+        "count": 4,
+        "probability": 0.0039,
+        "energy": 0.4054,
+        "total_score": 1.4414,
+        "is_feasible": false,
+        "num_selected": 4,
+        "selected_ids": [
+          "MOL_BACE_1111",
+          "MOL_BACE_1185",
+          "MOL_BACE_1121",
+          "MOL_BACE_1324"
+        ]
+      },
+      "00001011": {
+        "count": 12,
+        "probability": 0.0117,
+        "energy": -0.9007,
+        "total_score": 0.9007,
+        "is_feasible": true,
+        "num_selected": 3,
+        "selected_ids": [
+          "MOL_BACE_194",
+          "MOL_BACE_1121",
+          "MOL_BACE_1324"
+        ]
+      },
+      "11010110": {
+        "count": 1,
+        "probability": 0.001,
+        "energy": 5.6014,
+        "total_score": 1.7858,
+        "is_feasible": false,
+        "num_selected": 5,
+        "selected_ids": [
+          "MOL_BACE_1111",
+          "MOL_BACE_1061",
+          "MOL_BACE_1185",
+          "MOL_BACE_188",
+          "MOL_BACE_1121"
+        ]
+      },
+      "10100001": {
+        "count": 5,
+        "probability": 0.0049,
+        "energy": -1.6574,
+        "total_score": 1.6574,
+        "is_feasible": true,
+        "num_selected": 3,
+        "selected_ids": [
+          "MOL_BACE_1111",
+          "MOL_BACE_558",
+          "MOL_BACE_1324"
+        ]
+      },
+      "01101001": {
+        "count": 3,
+        "probability": 0.0029,
+        "energy": 0.0364,
+        "total_score": 1.8104,
+        "is_feasible": false,
+        "num_selected": 4,
+        "selected_ids": [
+          "MOL_BACE_1061",
+          "MOL_BACE_558",
+          "MOL_BACE_194",
+          "MOL_BACE_1324"
+        ]
+      },
+      "10100110": {
+        "count": 2,
+        "probability": 0.002,
+        "energy": -0.1687,
+        "total_score": 2.0155,
+        "is_feasible": false,
+        "num_selected": 4,
+        "selected_ids": [
+          "MOL_BACE_1111",
+          "MOL_BACE_558",
+          "MOL_BACE_188",
+          "MOL_BACE_1121"
+        ]
+      },
+      "00111000": {
+        "count": 2,
+        "probability": 0.002,
+        "energy": -1.4763,
+        "total_score": 1.4763,
+        "is_feasible": true,
+        "num_selected": 3,
+        "selected_ids": [
+          "MOL_BACE_558",
+          "MOL_BACE_1185",
+          "MOL_BACE_194"
+        ]
+      },
+      "01101000": {
+        "count": 7,
+        "probability": 0.0068,
+        "energy": -1.499,
+        "total_score": 1.499,
+        "is_feasible": true,
+        "num_selected": 3,
+        "selected_ids": [
+          "MOL_BACE_1061",
+          "MOL_BACE_558",
+          "MOL_BACE_194"
+        ]
+      },
+      "00001010": {
+        "count": 7,
+        "probability": 0.0068,
+        "energy": 1.2575,
+        "total_score": 0.5893,
+        "is_feasible": false,
+        "num_selected": 2,
+        "selected_ids": [
+          "MOL_BACE_194",
+          "MOL_BACE_1121"
+        ]
+      },
+      "00111001": {
+        "count": 6,
+        "probability": 0.0059,
+        "energy": 0.0591,
+        "total_score": 1.7877,
+        "is_feasible": false,
+        "num_selected": 4,
+        "selected_ids": [
+          "MOL_BACE_558",
+          "MOL_BACE_1185",
+          "MOL_BACE_194",
+          "MOL_BACE_1324"
+        ]
+      },
+      "10100010": {
+        "count": 4,
+        "probability": 0.0039,
+        "energy": -1.7179,
+        "total_score": 1.7179,
+        "is_feasible": true,
+        "num_selected": 3,
+        "selected_ids": [
+          "MOL_BACE_1111",
+          "MOL_BACE_558",
+          "MOL_BACE_1121"
+        ]
+      },
+      "11000111": {
+        "count": 1,
+        "probability": 0.001,
+        "energy": 5.6255,
+        "total_score": 1.7617,
+        "is_feasible": false,
+        "num_selected": 5,
+        "selected_ids": [
+          "MOL_BACE_1111",
+          "MOL_BACE_1061",
+          "MOL_BACE_188",
+          "MOL_BACE_1121",
+          "MOL_BACE_1324"
+        ]
+      },
+      "01010011": {
+        "count": 7,
+        "probability": 0.0068,
+        "energy": 0.4698,
+        "total_score": 1.377,
+        "is_feasible": false,
+        "num_selected": 4,
+        "selected_ids": [
+          "MOL_BACE_1061",
+          "MOL_BACE_1185",
+          "MOL_BACE_1121",
+          "MOL_BACE_1324"
+        ]
+      },
+      "01010001": {
+        "count": 9,
+        "probability": 0.0088,
+        "energy": -1.0051,
+        "total_score": 1.0051,
+        "is_feasible": true,
+        "num_selected": 3,
+        "selected_ids": [
+          "MOL_BACE_1061",
+          "MOL_BACE_1185",
+          "MOL_BACE_1324"
+        ]
+      },
+      "01000111": {
+        "count": 6,
+        "probability": 0.0059,
+        "energy": 0.5077,
+        "total_score": 1.3391,
+        "is_feasible": false,
+        "num_selected": 4,
+        "selected_ids": [
+          "MOL_BACE_1061",
+          "MOL_BACE_188",
+          "MOL_BACE_1121",
+          "MOL_BACE_1324"
+        ]
+      },
+      "01001111": {
+        "count": 4,
+        "probability": 0.0039,
+        "energy": 5.8307,
+        "total_score": 1.5565,
+        "is_feasible": false,
+        "num_selected": 5,
+        "selected_ids": [
+          "MOL_BACE_1061",
+          "MOL_BACE_194",
+          "MOL_BACE_188",
+          "MOL_BACE_1121",
+          "MOL_BACE_1324"
+        ]
+      },
+      "11110000": {
+        "count": 2,
+        "probability": 0.002,
+        "energy": -0.1929,
+        "total_score": 2.0397,
+        "is_feasible": false,
+        "num_selected": 4,
+        "selected_ids": [
+          "MOL_BACE_1111",
+          "MOL_BACE_1061",
+          "MOL_BACE_558",
+          "MOL_BACE_1185"
+        ]
+      },
+      "10011101": {
+        "count": 2,
+        "probability": 0.002,
+        "energy": 5.8027,
+        "total_score": 1.5845,
+        "is_feasible": false,
+        "num_selected": 5,
+        "selected_ids": [
+          "MOL_BACE_1111",
+          "MOL_BACE_1185",
+          "MOL_BACE_194",
+          "MOL_BACE_188",
+          "MOL_BACE_1324"
+        ]
+      },
+      "10010101": {
+        "count": 4,
+        "probability": 0.0039,
+        "energy": 0.4797,
+        "total_score": 1.3671,
+        "is_feasible": false,
+        "num_selected": 4,
+        "selected_ids": [
+          "MOL_BACE_1111",
+          "MOL_BACE_1185",
+          "MOL_BACE_188",
+          "MOL_BACE_1324"
+        ]
+      },
+      "01110010": {
+        "count": 2,
+        "probability": 0.002,
+        "energy": -0.1422,
+        "total_score": 1.989,
+        "is_feasible": false,
+        "num_selected": 4,
+        "selected_ids": [
+          "MOL_BACE_1061",
+          "MOL_BACE_558",
+          "MOL_BACE_1185",
+          "MOL_BACE_1121"
+        ]
+      },
+      "00001110": {
+        "count": 8,
+        "probability": 0.0078,
+        "energy": -0.8869,
+        "total_score": 0.8869,
+        "is_feasible": true,
+        "num_selected": 3,
+        "selected_ids": [
+          "MOL_BACE_194",
+          "MOL_BACE_188",
+          "MOL_BACE_1121"
+        ]
+      },
+      "10000010": {
+        "count": 2,
+        "probability": 0.002,
+        "energy": 1.0523,
+        "total_score": 0.7945,
+        "is_feasible": false,
+        "num_selected": 2,
+        "selected_ids": [
+          "MOL_BACE_1111",
+          "MOL_BACE_1121"
+        ]
+      },
+      "11010000": {
+        "count": 7,
+        "probability": 0.0068,
+        "energy": -1.1163,
+        "total_score": 1.1163,
+        "is_feasible": true,
+        "num_selected": 3,
+        "selected_ids": [
+          "MOL_BACE_1111",
+          "MOL_BACE_1061",
+          "MOL_BACE_1185"
+        ]
+      },
+      "10110000": {
+        "count": 2,
+        "probability": 0.002,
+        "energy": -1.6815,
+        "total_score": 1.6815,
+        "is_feasible": true,
+        "num_selected": 3,
+        "selected_ids": [
+          "MOL_BACE_1111",
+          "MOL_BACE_558",
+          "MOL_BACE_1185"
+        ]
+      },
+      "01000001": {
+        "count": 3,
+        "probability": 0.0029,
+        "energy": 1.1772,
+        "total_score": 0.6696,
+        "is_feasible": false,
+        "num_selected": 2,
+        "selected_ids": [
+          "MOL_BACE_1061",
+          "MOL_BACE_1324"
+        ]
+      },
+      "00110110": {
+        "count": 4,
+        "probability": 0.0039,
+        "energy": -0.0816,
+        "total_score": 1.9284,
+        "is_feasible": false,
+        "num_selected": 4,
+        "selected_ids": [
+          "MOL_BACE_558",
+          "MOL_BACE_1185",
+          "MOL_BACE_188",
+          "MOL_BACE_1121"
+        ]
+      },
+      "00010001": {
+        "count": 4,
+        "probability": 0.0039,
+        "energy": 1.1999,
+        "total_score": 0.6469,
+        "is_feasible": false,
+        "num_selected": 2,
+        "selected_ids": [
+          "MOL_BACE_1185",
+          "MOL_BACE_1324"
+        ]
+      },
+      "10100101": {
+        "count": 6,
+        "probability": 0.0059,
+        "energy": -0.1082,
+        "total_score": 1.955,
+        "is_feasible": false,
+        "num_selected": 4,
+        "selected_ids": [
+          "MOL_BACE_1111",
+          "MOL_BACE_558",
+          "MOL_BACE_188",
+          "MOL_BACE_1324"
+        ]
+      },
+      "00100101": {
+        "count": 7,
+        "probability": 0.0068,
+        "energy": -1.5324,
+        "total_score": 1.5324,
+        "is_feasible": true,
+        "num_selected": 3,
+        "selected_ids": [
+          "MOL_BACE_558",
+          "MOL_BACE_188",
+          "MOL_BACE_1324"
+        ]
+      },
+      "11100100": {
+        "count": 4,
+        "probability": 0.0039,
+        "energy": -0.155,
+        "total_score": 2.0018,
+        "is_feasible": false,
+        "num_selected": 4,
+        "selected_ids": [
+          "MOL_BACE_1111",
+          "MOL_BACE_1061",
+          "MOL_BACE_558",
+          "MOL_BACE_188"
+        ]
+      },
+      "11011001": {
+        "count": 2,
+        "probability": 0.002,
+        "energy": 5.7421,
+        "total_score": 1.6451,
+        "is_feasible": false,
+        "num_selected": 5,
+        "selected_ids": [
+          "MOL_BACE_1111",
+          "MOL_BACE_1061",
+          "MOL_BACE_1185",
+          "MOL_BACE_194",
+          "MOL_BACE_1324"
+        ]
+      },
+      "11001010": {
+        "count": 9,
+        "probability": 0.0088,
+        "energy": 0.4767,
+        "total_score": 1.3701,
+        "is_feasible": false,
+        "num_selected": 4,
+        "selected_ids": [
+          "MOL_BACE_1111",
+          "MOL_BACE_1061",
+          "MOL_BACE_194",
+          "MOL_BACE_1121"
+        ]
+      },
+      "01101010": {
+        "count": 3,
+        "probability": 0.0029,
+        "energy": -0.0241,
+        "total_score": 1.8709,
+        "is_feasible": false,
+        "num_selected": 4,
+        "selected_ids": [
+          "MOL_BACE_1061",
+          "MOL_BACE_558",
+          "MOL_BACE_194",
+          "MOL_BACE_1121"
+        ]
+      },
+      "10010111": {
+        "count": 3,
+        "probability": 0.0029,
+        "energy": 5.6482,
+        "total_score": 1.739,
+        "is_feasible": false,
+        "num_selected": 5,
+        "selected_ids": [
+          "MOL_BACE_1111",
+          "MOL_BACE_1185",
+          "MOL_BACE_188",
+          "MOL_BACE_1121",
+          "MOL_BACE_1324"
+        ]
+      },
+      "00100010": {
+        "count": 1,
+        "probability": 0.001,
+        "energy": 0.5515,
+        "total_score": 1.2953,
+        "is_feasible": false,
+        "num_selected": 2,
+        "selected_ids": [
+          "MOL_BACE_558",
+          "MOL_BACE_1121"
+        ]
+      },
+      "00010010": {
+        "count": 4,
+        "probability": 0.0039,
+        "energy": 1.1394,
+        "total_score": 0.7074,
+        "is_feasible": false,
+        "num_selected": 2,
+        "selected_ids": [
+          "MOL_BACE_1185",
+          "MOL_BACE_1121"
+        ]
+      },
+      "01100011": {
+        "count": 3,
+        "probability": 0.0029,
+        "energy": -0.1181,
+        "total_score": 1.9649,
+        "is_feasible": false,
+        "num_selected": 4,
+        "selected_ids": [
+          "MOL_BACE_1061",
+          "MOL_BACE_558",
+          "MOL_BACE_1121",
+          "MOL_BACE_1324"
+        ]
+      },
+      "00000110": {
+        "count": 3,
+        "probability": 0.0029,
+        "energy": 1.1773,
+        "total_score": 0.6695,
+        "is_feasible": false,
+        "num_selected": 2,
+        "selected_ids": [
+          "MOL_BACE_188",
+          "MOL_BACE_1121"
+        ]
+      },
+      "00110000": {
+        "count": 1,
+        "probability": 0.001,
+        "energy": 0.5879,
+        "total_score": 1.2589,
+        "is_feasible": false,
+        "num_selected": 2,
+        "selected_ids": [
+          "MOL_BACE_558",
+          "MOL_BACE_1185"
+        ]
+      },
+      "00110101": {
+        "count": 3,
+        "probability": 0.0029,
+        "energy": -0.0211,
+        "total_score": 1.8679,
+        "is_feasible": false,
+        "num_selected": 4,
+        "selected_ids": [
+          "MOL_BACE_558",
+          "MOL_BACE_1185",
+          "MOL_BACE_188",
+          "MOL_BACE_1324"
+        ]
+      },
+      "00111010": {
+        "count": 4,
+        "probability": 0.0039,
+        "energy": -0.0014,
+        "total_score": 1.8482,
+        "is_feasible": false,
+        "num_selected": 4,
+        "selected_ids": [
+          "MOL_BACE_558",
+          "MOL_BACE_1185",
+          "MOL_BACE_194",
+          "MOL_BACE_1121"
+        ]
+      },
+      "10011110": {
+        "count": 1,
+        "probability": 0.001,
+        "energy": 5.7422,
+        "total_score": 1.645,
+        "is_feasible": false,
+        "num_selected": 5,
+        "selected_ids": [
+          "MOL_BACE_1111",
+          "MOL_BACE_1185",
+          "MOL_BACE_194",
+          "MOL_BACE_188",
+          "MOL_BACE_1121"
+        ]
+      },
+      "10001111": {
+        "count": 1,
+        "probability": 0.001,
+        "energy": 5.7663,
+        "total_score": 1.6209,
+        "is_feasible": false,
+        "num_selected": 5,
+        "selected_ids": [
+          "MOL_BACE_1111",
+          "MOL_BACE_194",
+          "MOL_BACE_188",
+          "MOL_BACE_1121",
+          "MOL_BACE_1324"
+        ]
+      },
+      "11100110": {
+        "count": 1,
+        "probability": 0.001,
+        "energy": 5.0135,
+        "total_score": 2.3737,
+        "is_feasible": false,
+        "num_selected": 5,
+        "selected_ids": [
+          "MOL_BACE_1111",
+          "MOL_BACE_1061",
+          "MOL_BACE_558",
+          "MOL_BACE_188",
+          "MOL_BACE_1121"
+        ]
+      },
+      "01100010": {
+        "count": 2,
+        "probability": 0.002,
+        "energy": -1.6535,
+        "total_score": 1.6535,
+        "is_feasible": true,
+        "num_selected": 3,
+        "selected_ids": [
+          "MOL_BACE_1061",
+          "MOL_BACE_558",
+          "MOL_BACE_1121"
+        ]
+      },
+      "00000010": {
+        "count": 1,
+        "probability": 0.001,
+        "energy": 7.0153,
+        "total_score": 0.3719,
+        "is_feasible": false,
+        "num_selected": 1,
+        "selected_ids": [
+          "MOL_BACE_1121"
+        ]
+      },
+      "10101010": {
+        "count": 3,
+        "probability": 0.0029,
+        "energy": -0.0885,
+        "total_score": 1.9353,
+        "is_feasible": false,
+        "num_selected": 4,
+        "selected_ids": [
+          "MOL_BACE_1111",
+          "MOL_BACE_558",
+          "MOL_BACE_194",
+          "MOL_BACE_1121"
+        ]
+      },
+      "01011011": {
+        "count": 2,
+        "probability": 0.002,
+        "energy": 5.7928,
+        "total_score": 1.5944,
+        "is_feasible": false,
+        "num_selected": 5,
+        "selected_ids": [
+          "MOL_BACE_1061",
+          "MOL_BACE_1185",
+          "MOL_BACE_194",
+          "MOL_BACE_1121",
+          "MOL_BACE_1324"
+        ]
+      },
+      "10110001": {
+        "count": 2,
+        "probability": 0.002,
+        "energy": -0.1461,
+        "total_score": 1.9929,
+        "is_feasible": false,
+        "num_selected": 4,
+        "selected_ids": [
+          "MOL_BACE_1111",
+          "MOL_BACE_558",
+          "MOL_BACE_1185",
+          "MOL_BACE_1324"
+        ]
+      },
+      "11110010": {
+        "count": 1,
+        "probability": 0.001,
+        "energy": 4.9756,
+        "total_score": 2.4116,
+        "is_feasible": false,
+        "num_selected": 5,
+        "selected_ids": [
+          "MOL_BACE_1111",
+          "MOL_BACE_1061",
+          "MOL_BACE_558",
+          "MOL_BACE_1185",
+          "MOL_BACE_1121"
+        ]
+      },
+      "11001110": {
+        "count": 2,
+        "probability": 0.002,
+        "energy": 5.7195,
+        "total_score": 1.6677,
+        "is_feasible": false,
+        "num_selected": 5,
+        "selected_ids": [
+          "MOL_BACE_1111",
+          "MOL_BACE_1061",
+          "MOL_BACE_194",
+          "MOL_BACE_188",
+          "MOL_BACE_1121"
+        ]
+      },
+      "11011010": {
+        "count": 3,
+        "probability": 0.0029,
+        "energy": 5.6816,
+        "total_score": 1.7056,
+        "is_feasible": false,
+        "num_selected": 5,
+        "selected_ids": [
+          "MOL_BACE_1111",
+          "MOL_BACE_1061",
+          "MOL_BACE_1185",
+          "MOL_BACE_194",
+          "MOL_BACE_1121"
+        ]
+      },
+      "10101001": {
+        "count": 2,
+        "probability": 0.002,
+        "energy": -0.028,
+        "total_score": 1.8748,
+        "is_feasible": false,
+        "num_selected": 4,
+        "selected_ids": [
+          "MOL_BACE_1111",
+          "MOL_BACE_558",
+          "MOL_BACE_194",
+          "MOL_BACE_1324"
+        ]
+      },
+      "01111001": {
+        "count": 1,
+        "probability": 0.001,
+        "energy": 5.2413,
+        "total_score": 2.1459,
+        "is_feasible": false,
+        "num_selected": 5,
+        "selected_ids": [
+          "MOL_BACE_1061",
+          "MOL_BACE_558",
+          "MOL_BACE_1185",
+          "MOL_BACE_194",
+          "MOL_BACE_1324"
+        ]
+      },
+      "01010000": {
+        "count": 3,
+        "probability": 0.0029,
+        "energy": 1.1531,
+        "total_score": 0.6937,
+        "is_feasible": false,
+        "num_selected": 2,
+        "selected_ids": [
+          "MOL_BACE_1061",
+          "MOL_BACE_1185"
+        ]
+      },
+      "00100001": {
+        "count": 1,
+        "probability": 0.001,
+        "energy": 0.612,
+        "total_score": 1.2348,
+        "is_feasible": false,
+        "num_selected": 2,
+        "selected_ids": [
+          "MOL_BACE_558",
+          "MOL_BACE_1324"
+        ]
+      },
+      "01100110": {
+        "count": 3,
+        "probability": 0.0029,
+        "energy": -0.1043,
+        "total_score": 1.9511,
+        "is_feasible": false,
+        "num_selected": 4,
+        "selected_ids": [
+          "MOL_BACE_1061",
+          "MOL_BACE_558",
+          "MOL_BACE_188",
+          "MOL_BACE_1121"
+        ]
+      },
+      "11101000": {
+        "count": 5,
+        "probability": 0.0049,
+        "energy": -0.0748,
+        "total_score": 1.9216,
+        "is_feasible": false,
+        "num_selected": 4,
+        "selected_ids": [
+          "MOL_BACE_1111",
+          "MOL_BACE_1061",
+          "MOL_BACE_558",
+          "MOL_BACE_194"
+        ]
+      },
+      "10011111": {
+        "count": 1,
+        "probability": 0.001,
+        "energy": 14.6648,
+        "total_score": 1.9564,
+        "is_feasible": false,
+        "num_selected": 6,
+        "selected_ids": [
+          "MOL_BACE_1111",
+          "MOL_BACE_1185",
+          "MOL_BACE_194",
+          "MOL_BACE_188",
+          "MOL_BACE_1121",
+          "MOL_BACE_1324"
+        ]
+      },
+      "10100011": {
+        "count": 2,
+        "probability": 0.002,
+        "energy": -0.1825,
+        "total_score": 2.0293,
+        "is_feasible": false,
+        "num_selected": 4,
+        "selected_ids": [
+          "MOL_BACE_1111",
+          "MOL_BACE_558",
+          "MOL_BACE_1121",
+          "MOL_BACE_1324"
+        ]
+      },
+      "01110101": {
+        "count": 1,
+        "probability": 0.001,
+        "energy": 5.1611,
+        "total_score": 2.2261,
+        "is_feasible": false,
+        "num_selected": 5,
+        "selected_ids": [
+          "MOL_BACE_1061",
+          "MOL_BACE_558",
+          "MOL_BACE_1185",
+          "MOL_BACE_188",
+          "MOL_BACE_1324"
+        ]
+      },
+      "00101000": {
+        "count": 1,
+        "probability": 0.001,
+        "energy": 0.706,
+        "total_score": 1.1408,
+        "is_feasible": false,
+        "num_selected": 2,
+        "selected_ids": [
+          "MOL_BACE_558",
+          "MOL_BACE_194"
+        ]
+      },
+      "01000010": {
+        "count": 2,
+        "probability": 0.002,
+        "energy": 1.1167,
+        "total_score": 0.7301,
+        "is_feasible": false,
+        "num_selected": 2,
+        "selected_ids": [
+          "MOL_BACE_1061",
+          "MOL_BACE_1121"
+        ]
+      }
+    }
+  },
+  "top_k": {
+    "bitstring": "10100010",
+    "selected_indices": [
+      0,
+      2,
+      6
+    ],
+    "selected_ids": [
+      "MOL_BACE_1111",
+      "MOL_BACE_558",
+      "MOL_BACE_1121"
+    ],
+    "num_selected": 3,
+    "k_target": 3,
+    "is_feasible": true,
+    "total_score": 1.7179,
+    "penalty_cost": 0.0,
+    "energy": -1.7179,
+    "method": "Top-K Greedy Ranking",
+    "execution_time_sec": 0.001469
+  },
+  "exact_qubo": {
+    "bitstring": "10100010",
+    "selected_indices": [
+      0,
+      2,
+      6
+    ],
+    "selected_ids": [
+      "MOL_BACE_1111",
+      "MOL_BACE_558",
+      "MOL_BACE_1121"
+    ],
+    "num_selected": 3,
+    "k_target": 3,
+    "is_feasible": true,
+    "total_score": 1.7179,
+    "penalty_cost": 0.0,
+    "energy": -1.7179,
+    "method": "Exact Classical QUBO (Enumeration)",
+    "execution_time_sec": 0.005186,
+    "total_evaluated_states": 256,
+    "feasible_states_count": 56
+  },
+  "comparison": {
+    "methods": {
+      "QAOA": {
+        "energy": -1.7179,
+        "total_score": 1.7179,
+        "is_feasible": true,
+        "optimality_gap": 0.0,
+        "selected_ids": [
+          "MOL_BACE_1111",
+          "MOL_BACE_558",
+          "MOL_BACE_1121"
+        ],
+        "overlap_with_exact": 1.0,
+        "runtime_sec": 0.5585
+      },
+      "Top-K": {
+        "energy": -1.7179,
+        "total_score": 1.7179,
+        "is_feasible": true,
+        "optimality_gap": 0.0,
+        "selected_ids": [
+          "MOL_BACE_1111",
+          "MOL_BACE_558",
+          "MOL_BACE_1121"
+        ],
+        "overlap_with_exact": 1.0,
+        "runtime_sec": 0.001469
+      },
+      "Exact_QUBO": {
+        "energy": -1.7179,
+        "total_score": 1.7179,
+        "is_feasible": true,
+        "optimality_gap": 0.0,
+        "selected_ids": [
+          "MOL_BACE_1111",
+          "MOL_BACE_558",
+          "MOL_BACE_1121"
+        ],
+        "overlap_with_exact": 1.0,
+        "runtime_sec": 0.005186
+      }
+    },
+    "summary": {
+      "exact_optimal_energy": -1.7179,
+      "qaoa_found_exact_optimum": true,
+      "qaoa_optimality_gap": 0.0,
+      "top_k_optimality_gap": 0.0
+    }
+  }
+}

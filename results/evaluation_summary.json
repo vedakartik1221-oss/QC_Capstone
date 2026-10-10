@@ -1,0 +1,81 @@
+{
+  "dataset_summary": {
+    "initial_count": 1513,
+    "missing_smiles_or_target": 0,
+    "invalid_smiles_count": 0,
+    "duplicate_smiles_count": 0,
+    "final_valid_count": 1513,
+    "active_count": 691,
+    "inactive_count": 822
+  },
+  "machine_learning_metrics": {
+    "accuracy": 0.7855,
+    "precision": 0.7589,
+    "recall": 0.7754,
+    "f1_score": 0.767,
+    "roc_auc": 0.8794,
+    "confusion_matrix": [
+      [
+        131,
+        34
+      ],
+      [
+        31,
+        107
+      ]
+    ],
+    "test_samples": 303,
+    "test_actives": 138,
+    "test_inactives": 165
+  },
+  "quantum_screening_benchmarks": {
+    "methods": {
+      "QAOA": {
+        "energy": -1.7179,
+        "total_score": 1.7179,
+        "is_feasible": true,
+        "optimality_gap": 0.0,
+        "selected_ids": [
+          "MOL_BACE_1111",
+          "MOL_BACE_558",
+          "MOL_BACE_1121"
+        ],
+        "overlap_with_exact": 1.0,
+        "runtime_sec": 0.5585
+      },
+      "Top-K": {
+        "energy": -1.7179,
+        "total_score": 1.7179,
+        "is_feasible": true,
+        "optimality_gap": 0.0,
+        "selected_ids": [
+          "MOL_BACE_1111",
+          "MOL_BACE_558",
+          "MOL_BACE_1121"
+        ],
+        "overlap_with_exact": 1.0,
+        "runtime_sec": 0.001469
+      },
+      "Exact_QUBO": {
+        "energy": -1.7179,
+        "total_score": 1.7179,
+        "is_feasible": true,
+        "optimality_gap": 0.0,
+        "selected_ids": [
+          "MOL_BACE_1111",
+          "MOL_BACE_558",
+          "MOL_BACE_1121"
+        ],
+        "overlap_with_exact": 1.0,
+        "runtime_sec": 0.005186
+      }
+    },
+    "summary": {
+      "exact_optimal_energy": -1.7179,
+      "qaoa_found_exact_optimum": true,
+      "qaoa_optimality_gap": 0.0,
+      "top_k_optimality_gap": 0.0
+    }
+  },
+  "scientific_disclaimer": "This report documents computational screening results. In silico predictions and QAOA candidate rankings are prioritized hypotheses for laboratory testing, not verified proof of pharmacological activity or clinical efficacy."
+}
